@@ -42,7 +42,11 @@ namespace PC4Asin.Controllers
 
             // El resultado de la predicción está en prediction.PredictedLabel
             // Puedes procesar el resultado según tus necesidades
-            ViewBag.Resultado = prediction.PredictedLabel;
+            if(prediction.PredictedLabel==1){
+            ViewBag.Resultado = "Es un comentario positivo (1)";}
+            else{
+            ViewBag.Resultado = "Es un comentario negativo (0)";
+            }
 
              return View("Views/MLModel/Resultado.cshtml");
         }
