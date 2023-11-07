@@ -1,0 +1,3 @@
+# Number of terms of type 'Single' = 2
+0	0
+1	1
